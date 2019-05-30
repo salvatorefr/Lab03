@@ -9,13 +9,12 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane minWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="it.polito.tdp.spellchecker.controller.SpellCheckerController">
+<BorderPane minWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.spellchecker.controller.SpellCheckerController">
    <top>
       <Label contentDisplay="CENTER" text="lab 03 spellchecker" BorderPane.alignment="CENTER" />
    </top>
    <bottom>
-      <Label text="spell check completed in 0" BorderPane.alignment="CENTER" />
+      <Label fx:id="tempoCompletamento" text="spell check completed in 0" BorderPane.alignment="CENTER" />
    </bottom>
    <center>
       <VBox BorderPane.alignment="CENTER">
@@ -32,7 +31,7 @@
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <TextArea>
+                  <TextArea fx:id="textInserito">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
@@ -59,7 +58,7 @@
             </HBox>
             <HBox>
                <children>
-                  <TextArea>
+                  <TextArea fx:id="txtErrori">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
